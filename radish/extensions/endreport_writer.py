@@ -88,7 +88,7 @@ class EndreportWriter(object):
         output += colored_closing_paren
 
         output += "\n"
-        output += colorful.bold_white("{} scenarios (".format(stats["scenarios"]["amount"]))
+        output += colorful.bold_white("{0} scenarios (".format(stats["scenarios"]["amount"]))
         output += passed_word.format(stats["scenarios"]["passed"])
         if stats["scenarios"]["failed"]:
             output += colored_comma + failed_word.format(stats["scenarios"]["failed"])
@@ -99,7 +99,7 @@ class EndreportWriter(object):
         output += colored_closing_paren
 
         output += "\n"
-        output += colorful.bold_white("{} steps (".format(stats["steps"]["amount"]))
+        output += colorful.bold_white("{0} steps (".format(stats["steps"]["amount"]))
         output += passed_word.format(stats["steps"]["passed"])
         if stats["steps"]["failed"]:
             output += colored_comma + failed_word.format(stats["steps"]["failed"])
