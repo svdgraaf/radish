@@ -121,6 +121,6 @@ class EndreportWriter(object):
             ))
 
         output += "\n"
-        output += colorful.cyan("Run {0} finished within {1}:{2} minutes".format(marker, int(duration.total_seconds()) / 60, duration.total_seconds() % 60.0))
+        output += colorful.cyan("Run {0} finished within {1}:{2} minutes".format(marker, duration.seconds / 60, duration.seconds % 60.0))
 
         write(output)
